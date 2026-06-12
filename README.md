@@ -1,3 +1,7 @@
+# File Searcher and Pattern Matching
+
+This project is a C application that allows for the efficient, simultaneous searching of multiple strings in text files or directories. The core of the implementation relies on the Aho-Corasick algorithm built upon a Trie data structure, which is optimized by using Red-Black Trees (RBT) to manage the child nodes of each state.This RBT optimization ensures a logarithmic time complexity of O(log n) for searching and inserting characters at every level of the Trie, solving the massive memory consumption issue caused by the traditional approach of storing frequency arrays (or full alphabet arrays) for each node.
+
 ## Algorithmic Implementation Details
 
 ### Time and Space Complexities
